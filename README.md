@@ -1,5 +1,5 @@
 # BufferOverflow-Cheatsheets
-Cheat Sheet for Buffer Overflow
+バッファオーバーフローのチートシート
 
-- For OSCP
+- OSCP向け（基礎）
   - https://github.com/firefire2/BufferOverflow-Cheatsheets/blob/main/basic.md
