@@ -58,11 +58,11 @@ Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac
 
 metasploit-frameworkのpattern_offset.rbで、メモしたEIPの値がパターンの何バイト目かを特定する。<br>
 ```
-$ /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -l 2000 -q 79423379
+$ /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 79423379
 [*] Exact match at offset 1510
 ```
 
-exploitで使うoffsetは、ここでマッチしたオフセットに+4バイトした値になる。
+TryHackMeのラボでは、exploitで使うoffsetは、ここでマッチしたオフセットに+4バイトした値になる。なぜか。
 
 特定したオフセットを、exploitコードのoffsetとして追記し、プログラムに送り込む。
 
