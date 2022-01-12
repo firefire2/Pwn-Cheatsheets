@@ -69,7 +69,7 @@ exploitで使うoffsetは、ここでマッチしたオフセットに+4バイ�
 デバッカーのEIPが、42424242(=BBBB)に、なっていればEIPの掌握が成功している。
 
 ## シェルコードの作成（BadCharの特定）
-つぎにシェルコードを作成していく。まず、null(=\xff)のようにシェルコード中の文字列として使用できない文字（+BadChar）が存在するので、それらの文字を特定していく。
+つぎにシェルコードを作成していく。まず、null(=\x00)のようにシェルコード中の文字列として使用できない文字（+BadChar）が存在するので、それらの文字を特定していく。
 
 [byte_array.txt](https://github.com/firefire2/BufferOverflow-Cheatsheets/blob/main/byte_array.txt)の、badcharsの値をexploitコードのpayloadとして追記し、プログラムに送り込む。
 
