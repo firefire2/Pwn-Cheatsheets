@@ -114,3 +114,4 @@ EIPはすでに掌握できているので、exploitコードの、retnの値を
 
 ### Reference
 - https://tryhackme.com/room/bufferoverflowprep
+- https://qiita.com/v_avenger/items/0af8602e4572889f9184
